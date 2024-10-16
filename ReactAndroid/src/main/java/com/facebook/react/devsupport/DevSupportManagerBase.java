@@ -20,6 +20,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.hardware.SensorManager;
+import android.os.Build;
 import android.util.Pair;
 import android.view.Gravity;
 import android.view.View;
