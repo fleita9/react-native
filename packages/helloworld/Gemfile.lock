@@ -1,11 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
     CFPropertyList (3.0.7)
       base64
       nkf
       rexml
     activesupport (7.0.8.4)
+=======
+    CFPropertyList (3.0.5)
+      rexml
+    activesupport (6.1.5.1)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -16,12 +22,20 @@ GEM
       httpclient (~> 2.8, >= 2.8.3)
       json (>= 1.5.1)
     atomos (0.1.3)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
     base64 (0.2.0)
     claide (1.1.0)
     cocoapods (1.15.2)
       addressable (~> 2.8)
       claide (>= 1.0.2, < 2.0)
       cocoapods-core (= 1.15.2)
+=======
+    claide (1.1.0)
+    cocoapods (1.11.3)
+      addressable (~> 2.8)
+      claide (>= 1.0.2, < 2.0)
+      cocoapods-core (= 1.11.3)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
       cocoapods-deintegrate (>= 1.0.3, < 2.0)
       cocoapods-downloader (>= 2.1, < 3.0)
       cocoapods-plugins (>= 1.0.0, < 2.0)
@@ -34,10 +48,17 @@ GEM
       gh_inspector (~> 1.0)
       molinillo (~> 0.8.0)
       nap (~> 1.0)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
       ruby-macho (>= 2.3.0, < 3.0)
       xcodeproj (>= 1.23.0, < 2.0)
     cocoapods-core (1.15.2)
       activesupport (>= 5.0, < 8)
+=======
+      ruby-macho (>= 1.0, < 3.0)
+      xcodeproj (>= 1.21.0, < 2.0)
+    cocoapods-core (1.11.3)
+      activesupport (>= 5.0, < 7)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
       addressable (~> 2.8)
       algoliasearch (~> 1.0)
       concurrent-ruby (~> 1.1)
@@ -47,7 +68,11 @@ GEM
       public_suffix (~> 4.0)
       typhoeus (~> 1.0)
     cocoapods-deintegrate (1.0.5)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
     cocoapods-downloader (2.1)
+=======
+    cocoapods-downloader (1.6.3)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
     cocoapods-plugins (1.0.0)
       nap
     cocoapods-search (1.0.1)
@@ -56,27 +81,47 @@ GEM
       netrc (~> 0.11)
     cocoapods-try (1.2.0)
     colored2 (3.1.2)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
     concurrent-ruby (1.3.4)
+=======
+    concurrent-ruby (1.1.10)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
     escape (0.0.4)
     ethon (0.16.0)
       ffi (>= 1.15.0)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
     ffi (1.17.0)
+=======
+    ffi (1.15.5)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
     fourflusher (2.3.1)
     fuzzy_match (2.0.4)
     gh_inspector (1.1.3)
     httpclient (2.8.3)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     json (2.7.2)
     minitest (5.25.1)
+=======
+    i18n (1.10.0)
+      concurrent-ruby (~> 1.0)
+    json (2.6.1)
+    minitest (5.15.0)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
     molinillo (0.8.0)
     nanaimo (0.3.0)
     nap (1.1.0)
     netrc (0.11.0)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
     nkf (0.2.0)
     public_suffix (4.0.7)
     rexml (3.3.5)
       strscan
+=======
+    public_suffix (4.0.7)
+    rexml (3.2.5)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
     ruby-macho (2.5.1)
     strscan (3.1.0)
     typhoeus (1.4.1)
@@ -89,7 +134,12 @@ GEM
       claide (>= 1.0.2, < 2.0)
       colored2 (~> 3.1)
       nanaimo (~> 0.3.0)
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
       rexml (>= 3.3.2, < 4.0)
+=======
+      rexml (~> 3.2.4)
+    zeitwerk (2.5.4)
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock
 
 PLATFORMS
   ruby
@@ -102,4 +152,8 @@ RUBY VERSION
    ruby 3.3.0p0
 
 BUNDLED WITH
+<<<<<<< HEAD:packages/helloworld/Gemfile.lock
    2.5.3
+=======
+   2.2.27
+>>>>>>> v0.68.2-android14-support:template/Gemfile.lock

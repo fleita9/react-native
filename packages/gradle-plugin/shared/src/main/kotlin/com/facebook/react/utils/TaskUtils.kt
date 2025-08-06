@@ -16,7 +16,11 @@ fun windowsAwareCommandLine(args: List<Any>): List<Any> =
       args
     }
 
+<<<<<<< HEAD:packages/gradle-plugin/shared/src/main/kotlin/com/facebook/react/utils/TaskUtils.kt
 fun windowsAwareBashCommandLine(
+=======
+internal fun windowsAwareBashCommandLine(
+>>>>>>> v0.68.2-android14-support:packages/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/utils/TaskUtils.kt
     vararg args: String,
     bashWindowsHome: String? = null
 ): List<String> =

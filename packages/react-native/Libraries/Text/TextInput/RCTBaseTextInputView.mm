@@ -133,12 +133,21 @@ RCT_NOT_IMPLEMENTED(-(instancetype)initWithFrame : (CGRect)frame)
   // because setting the attributed string will kill the dictation. This means that we can't impose
   // the settings on a dictation.
   // Similarly, when the user is in the middle of inputting some text in Japanese/Chinese, there will be styling on the
+<<<<<<< HEAD:packages/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.mm
   // text that we should disregard. See
   // https://developer.apple.com/documentation/uikit/uitextinput/1614489-markedtextrange?language=objc for more info.
   // Also, updating the attributed text while inputting Korean language will break input mechanism.
   // If the user added an emoji, the system adds a font attribute for the emoji and stores the original font in
   // NSOriginalFont. Lastly, when entering a password, etc., there will be additional styling on the field as the native
   // text view handles showing the last character for a split second.
+=======
+  // text that we should disregard. See https://developer.apple.com/documentation/uikit/uitextinput/1614489-markedtextrange?language=objc
+  // for more info.
+  // Also, updating the attributed text while inputting Korean language will break input mechanism.
+  // If the user added an emoji, the system adds a font attribute for the emoji and stores the original font in NSOriginalFont.
+  // Lastly, when entering a password, etc., there will be additional styling on the field as the native text view
+  // handles showing the last character for a split second.
+>>>>>>> v0.68.2-android14-support:Libraries/Text/TextInput/RCTBaseTextInputView.m
   __block BOOL fontHasBeenUpdatedBySystem = false;
   [oldText enumerateAttribute:@"NSOriginalFont"
                       inRange:NSMakeRange(0, oldText.length)
@@ -149,6 +158,7 @@ RCT_NOT_IMPLEMENTED(-(instancetype)initWithFrame : (CGRect)frame)
                      }
                    }];
 
+<<<<<<< HEAD:packages/react-native/Libraries/Text/TextInput/RCTBaseTextInputView.mm
   BOOL shouldFallbackDictation = [self.backedTextInputView.textInputMode.primaryLanguage isEqualToString:@"dictation"];
   if (@available(iOS 16.0, *)) {
     shouldFallbackDictation = self.backedTextInputView.dictationRecognizing;
@@ -158,6 +168,14 @@ RCT_NOT_IMPLEMENTED(-(instancetype)initWithFrame : (CGRect)frame)
       [self.backedTextInputView.textInputMode.primaryLanguage isEqualToString:@"ko-KR"] ||
       self.backedTextInputView.markedTextRange || self.backedTextInputView.isSecureTextEntry ||
       fontHasBeenUpdatedBySystem;
+=======
+  BOOL shouldFallbackToBareTextComparison =
+    [self.backedTextInputView.textInputMode.primaryLanguage isEqualToString:@"dictation"] ||
+    [self.backedTextInputView.textInputMode.primaryLanguage isEqualToString:@"ko-KR"] ||
+    self.backedTextInputView.markedTextRange ||
+    self.backedTextInputView.isSecureTextEntry ||
+    fontHasBeenUpdatedBySystem;
+>>>>>>> v0.68.2-android14-support:Libraries/Text/TextInput/RCTBaseTextInputView.m
 
   if (shouldFallbackToBareTextComparison) {
     return ([newText.string isEqualToString:oldText.string]);

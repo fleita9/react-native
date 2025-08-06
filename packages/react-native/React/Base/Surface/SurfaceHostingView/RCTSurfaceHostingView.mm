@@ -31,6 +31,23 @@ RCT_NOT_IMPLEMENTED(-(instancetype)init)
 RCT_NOT_IMPLEMENTED(-(instancetype)initWithFrame : (CGRect)frame)
 RCT_NOT_IMPLEMENTED(-(nullable instancetype)initWithCoder : (NSCoder *)coder)
 
+<<<<<<< HEAD:packages/react-native/React/Base/Surface/SurfaceHostingView/RCTSurfaceHostingView.mm
+=======
+- (instancetype)initWithBridge:(RCTBridge *)bridge
+                    moduleName:(NSString *)moduleName
+             initialProperties:(NSDictionary *)initialProperties
+               sizeMeasureMode:(RCTSurfaceSizeMeasureMode)sizeMeasureMode
+{
+  id<RCTSurfaceProtocol> surface = [[self class] createSurfaceWithBridge:bridge
+                                                              moduleName:moduleName
+                                                       initialProperties:initialProperties];
+  if (self = [self initWithSurface:surface sizeMeasureMode:sizeMeasureMode]) {
+    [surface start];
+  }
+  return self;
+}
+
+>>>>>>> v0.68.2-android14-support:React/Base/Surface/SurfaceHostingView/RCTSurfaceHostingView.mm
 - (instancetype)initWithSurface:(id<RCTSurfaceProtocol>)surface
                 sizeMeasureMode:(RCTSurfaceSizeMeasureMode)sizeMeasureMode
 {

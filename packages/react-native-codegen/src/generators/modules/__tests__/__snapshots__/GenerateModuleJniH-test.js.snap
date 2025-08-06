@@ -52,6 +52,7 @@ add_library(
 
 target_include_directories(react_codegen_SampleWithUppercaseName PUBLIC . react/renderer/components/SampleWithUppercaseName)
 
+<<<<<<< HEAD
 target_link_libraries(
   react_codegen_SampleWithUppercaseName
   fbjni
@@ -60,6 +61,10 @@ target_link_libraries(
   # because we want to break a circular dependency between react_codegen_rncore and reactnative
   reactnative
 )
+=======
+LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/SampleWithUppercaseName/*.cpp)
+LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
+>>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_SampleWithUppercaseName
@@ -126,6 +131,7 @@ add_library(
 
 target_include_directories(react_codegen_complex_objects PUBLIC . react/renderer/components/complex_objects)
 
+<<<<<<< HEAD
 target_link_libraries(
   react_codegen_complex_objects
   fbjni
@@ -134,6 +140,10 @@ target_link_libraries(
   # because we want to break a circular dependency between react_codegen_rncore and reactnative
   reactnative
 )
+=======
+LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/complex_objects/*.cpp)
+LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
+>>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_complex_objects
@@ -267,6 +277,7 @@ add_library(
 
 target_include_directories(react_codegen_empty_native_modules PUBLIC . react/renderer/components/empty_native_modules)
 
+<<<<<<< HEAD
 target_link_libraries(
   react_codegen_empty_native_modules
   fbjni
@@ -275,6 +286,10 @@ target_link_libraries(
   # because we want to break a circular dependency between react_codegen_rncore and reactnative
   reactnative
 )
+=======
+LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/empty_native_modules/*.cpp)
+LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
+>>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_empty_native_modules
@@ -415,6 +430,7 @@ add_library(
 
 target_include_directories(react_codegen_native_modules_with_type_aliases PUBLIC . react/renderer/components/native_modules_with_type_aliases)
 
+<<<<<<< HEAD
 target_link_libraries(
   react_codegen_native_modules_with_type_aliases
   fbjni
@@ -423,6 +439,10 @@ target_link_libraries(
   # because we want to break a circular dependency between react_codegen_rncore and reactnative
   reactnative
 )
+=======
+LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/native_modules_with_type_aliases/*.cpp)
+LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
+>>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_native_modules_with_type_aliases
@@ -497,6 +517,7 @@ add_library(
 
 target_include_directories(react_codegen_real_module_example PUBLIC . react/renderer/components/real_module_example)
 
+<<<<<<< HEAD
 target_link_libraries(
   react_codegen_real_module_example
   fbjni
@@ -505,6 +526,10 @@ target_link_libraries(
   # because we want to break a circular dependency between react_codegen_rncore and reactnative
   reactnative
 )
+=======
+LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/real_module_example/*.cpp)
+LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
+>>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_real_module_example
@@ -571,6 +596,7 @@ add_library(
 
 target_include_directories(react_codegen_simple_native_modules PUBLIC . react/renderer/components/simple_native_modules)
 
+<<<<<<< HEAD
 target_link_libraries(
   react_codegen_simple_native_modules
   fbjni
@@ -579,6 +605,10 @@ target_link_libraries(
   # because we want to break a circular dependency between react_codegen_rncore and reactnative
   reactnative
 )
+=======
+LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/simple_native_modules/*.cpp)
+LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
+>>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_simple_native_modules
@@ -653,6 +683,7 @@ add_library(
 
 target_include_directories(react_codegen_two_modules_different_files PUBLIC . react/renderer/components/two_modules_different_files)
 
+<<<<<<< HEAD
 target_link_libraries(
   react_codegen_two_modules_different_files
   fbjni
@@ -661,6 +692,10 @@ target_link_libraries(
   # because we want to break a circular dependency between react_codegen_rncore and reactnative
   reactnative
 )
+=======
+LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/two_modules_different_files/*.cpp)
+LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
+>>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_two_modules_different_files

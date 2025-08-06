@@ -13,7 +13,10 @@ using namespace facebook::react;
 namespace facebook::react {
 
 constexpr uint32_t INT_SIZE = sizeof(uint32_t);
+<<<<<<< HEAD:packages/react-native/ReactCommon/react/renderer/mapbuffer/MapBufferBuilder.cpp
 constexpr uint32_t LONG_SIZE = sizeof(uint64_t);
+=======
+>>>>>>> v0.68.2-android14-support:ReactCommon/react/renderer/mapbuffer/MapBufferBuilder.cpp
 constexpr uint32_t DOUBLE_SIZE = sizeof(double);
 constexpr uint32_t MAX_BUCKET_VALUE_SIZE = sizeof(uint64_t);
 
@@ -77,6 +80,7 @@ void MapBufferBuilder::putInt(MapBuffer::Key key, int32_t value) {
       INT_SIZE);
 }
 
+<<<<<<< HEAD:packages/react-native/ReactCommon/react/renderer/mapbuffer/MapBufferBuilder.cpp
 void MapBufferBuilder::putLong(MapBuffer::Key key, int64_t value) {
   storeKeyValue(
       key,
@@ -88,6 +92,11 @@ void MapBufferBuilder::putLong(MapBuffer::Key key, int64_t value) {
 void MapBufferBuilder::putString(MapBuffer::Key key, const std::string& value) {
   auto strSize = value.size();
   const char* strData = value.data();
+=======
+void MapBufferBuilder::putString(MapBuffer::Key key, std::string const &value) {
+  auto strSize = value.size();
+  const char *strData = value.data();
+>>>>>>> v0.68.2-android14-support:ReactCommon/react/renderer/mapbuffer/MapBufferBuilder.cpp
 
   // format [length of string (int)] + [Array of Characters in the string]
   auto offset = dynamicData_.size();
@@ -103,7 +112,11 @@ void MapBufferBuilder::putString(MapBuffer::Key key, const std::string& value) {
       INT_SIZE);
 }
 
+<<<<<<< HEAD:packages/react-native/ReactCommon/react/renderer/mapbuffer/MapBufferBuilder.cpp
 void MapBufferBuilder::putMapBuffer(MapBuffer::Key key, const MapBuffer& map) {
+=======
+void MapBufferBuilder::putMapBuffer(MapBuffer::Key key, MapBuffer const &map) {
+>>>>>>> v0.68.2-android14-support:ReactCommon/react/renderer/mapbuffer/MapBufferBuilder.cpp
   auto mapBufferSize = map.size();
 
   auto offset = dynamicData_.size();

@@ -26,6 +26,8 @@
 ; helloworld
 <PROJECT_ROOT>/packages/helloworld/ios/Pods/
 
+.*/node_modules/resolve/test/resolver/malformed_package_json/package\.json$
+
 [untyped]
 .*/node_modules/@react-native-community/cli/.*/.*
 

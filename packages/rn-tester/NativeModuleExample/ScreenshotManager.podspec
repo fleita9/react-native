@@ -23,5 +23,19 @@ Pod::Spec.new do |s|
   s.requires_arc    = true
   s.framework = ["UIKit", "CoreGraphics"]
 
+<<<<<<< HEAD
   install_modules_dependencies(s)
+=======
+  s.dependency "React-Core"
+  s.dependency "RCT-Folly", folly_version
+
+  # s.dependency "..."
+
+  # Enable codegen for this library
+  use_react_native_codegen!(s, {
+    :react_native_path => "../../..",
+    :js_srcs_dir => "./",
+    :library_type => "modules",
+  })
+>>>>>>> v0.68.2-android14-support
 end

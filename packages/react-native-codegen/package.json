@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "@react-native/codegen",
   "version": "0.77.0-main",
   "description": "Code generation tools for React Native",
   "license": "MIT",
+=======
+  "name": "react-native-codegen",
+  "version": "0.0.17",
+  "description": "⚛️ Code generation tools for React Native",
+  "homepage": "https://github.com/facebook/react-native/tree/HEAD/packages/react-native-codegen",
+>>>>>>> v0.68.2-android14-support
   "repository": {
     "type": "git",
     "url": "git+https://github.com/facebook/react-native.git",

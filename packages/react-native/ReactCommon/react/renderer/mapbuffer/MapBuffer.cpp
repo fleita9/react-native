@@ -119,6 +119,7 @@ MapBuffer MapBuffer::getMapBuffer(Key key) const {
   return MapBuffer(std::move(value));
 }
 
+<<<<<<< HEAD:packages/react-native/ReactCommon/react/renderer/mapbuffer/MapBuffer.cpp
 std::vector<MapBuffer> MapBuffer::getMapBufferList(MapBuffer::Key key) const {
   std::vector<MapBuffer> mapBufferList;
 
@@ -144,6 +145,8 @@ std::vector<MapBuffer> MapBuffer::getMapBufferList(MapBuffer::Key key) const {
   return mapBufferList;
 }
 
+=======
+>>>>>>> v0.68.2-android14-support:ReactCommon/react/renderer/mapbuffer/MapBuffer.cpp
 size_t MapBuffer::size() const {
   return bytes_.size();
 }

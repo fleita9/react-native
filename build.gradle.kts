@@ -5,13 +5,22 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-plugins {
-  alias(libs.plugins.nexus.publish)
-  alias(libs.plugins.android.library) apply false
-  alias(libs.plugins.android.application) apply false
-  alias(libs.plugins.download) apply false
-  alias(libs.plugins.kotlin.android) apply false
-  alias(libs.plugins.binary.compatibility.validator) apply true
+val ndkPath by extra(System.getenv("ANDROID_NDK"))
+val ndkVersion by extra(System.getenv("ANDROID_NDK_VERSION"))
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        val kotlin_version: String by project
+        classpath("com.android.tools.build:gradle:7.0.4")
+        classpath("de.undercouch:gradle-download-task:4.1.2")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
 }
 
 val reactAndroidProperties = java.util.Properties()
