@@ -34,13 +34,6 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.common.ReactConstants;
-<<<<<<< HEAD:packages/react-native/ReactAndroid/src/main/java/com/facebook/react/views/text/ReactTextView.java
-import com.facebook.react.internal.SystraceSection;
-import com.facebook.react.uimanager.BackgroundStyleApplicator;
-import com.facebook.react.uimanager.LengthPercentage;
-import com.facebook.react.uimanager.LengthPercentageType;
-=======
->>>>>>> v0.68.2-android14-support:ReactAndroid/src/main/java/com/facebook/react/views/text/ReactTextView.java
 import com.facebook.react.uimanager.PixelUtil;
 import com.facebook.react.uimanager.ReactCompoundView;
 import com.facebook.react.uimanager.UIManagerModule;

@@ -49,9 +49,6 @@ static RCTRootViewSizeFlexibility convertToRootViewSizeFlexibility(RCTSurfaceSiz
   }
 }
 
-<<<<<<< HEAD:packages/react-native/React/Base/Surface/SurfaceHostingView/RCTSurfaceHostingProxyRootView.mm
-@implementation RCTSurfaceHostingProxyRootView
-=======
 @implementation RCTSurfaceHostingProxyRootView {
   RCTModuleRegistry *_moduleRegistry;
 }
@@ -95,7 +92,6 @@ static RCTRootViewSizeFlexibility convertToRootViewSizeFlexibility(RCTSurfaceSiz
 
   return [self initWithBridge:bridge moduleName:moduleName initialProperties:initialProperties];
 }
->>>>>>> v0.68.2-android14-support:React/Base/Surface/SurfaceHostingView/RCTSurfaceHostingProxyRootView.mm
 
 - (instancetype)initWithSurface:(id<RCTSurfaceProtocol>)surface
 {

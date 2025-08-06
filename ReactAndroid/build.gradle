@@ -279,7 +279,7 @@ task androidSourcesJar(type: Jar) {
 }
 
 android {
-    compileSdkVersion 3
+    compileSdkVersion 35
 
     // Used to override the NDK path/version on internal CI or by allowing
     // users to customize the NDK path/version from their root project (e.g. for M1 support)

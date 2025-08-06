@@ -15,14 +15,8 @@ import java.util.Map;
 
 public class ReactNativeVersion {
   public static final Map<String, Object> VERSION = MapBuilder.<String, Object>of(
-<<<<<<< HEAD:packages/react-native/ReactAndroid/src/main/java/com/facebook/react/modules/systeminfo/ReactNativeVersion.java
-      "major", 1000,
-      "minor", 0,
-      "patch", 0,
-=======
       "major", 0,
       "minor", 68,
       "patch", 2,
->>>>>>> v0.68.2-android14-support:ReactAndroid/src/main/java/com/facebook/react/modules/systeminfo/ReactNativeVersion.java
       "prerelease", null);
 }

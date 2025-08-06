@@ -82,23 +82,8 @@ add_library(
 
 target_include_directories(react_codegen_${libraryName} PUBLIC . react/renderer/components/${libraryName})
 
-<<<<<<< HEAD
-target_link_libraries(
-  react_codegen_${libraryName}
-  fbjni
-  jsi
-  # We need to link different libraries based on whether we are building rncore or not, that's necessary
-  # because we want to break a circular dependency between react_codegen_rncore and reactnative
-  ${
-    libraryName !== 'rncore'
-      ? 'reactnative'
-      : 'folly_runtime glog react_debug react_nativemodule_core react_render_componentregistry react_render_core react_render_debug react_render_graphics react_render_imagemanager react_render_mapbuffer react_utils rrc_image rrc_view turbomodulejsijni yoga'
-  }
-)
-=======
 LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/*.cpp) $(wildcard $(LOCAL_PATH)/react/renderer/components/${libraryName}/*.cpp)
 LOCAL_SRC_FILES := $(subst $(LOCAL_PATH)/,,$(LOCAL_SRC_FILES))
->>>>>>> v0.68.2-android14-support
 
 target_compile_options(
   react_codegen_${libraryName}

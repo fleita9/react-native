@@ -130,11 +130,7 @@ class MapBuffer {
   // TODO T83483191: review this declaration
   MapBuffer getMapBuffer(MapBuffer::Key key) const;
 
-<<<<<<< HEAD:packages/react-native/ReactCommon/react/renderer/mapbuffer/MapBuffer.h
-  std::vector<MapBuffer> getMapBufferList(MapBuffer::Key key) const;
-=======
   size_t size() const;
->>>>>>> v0.68.2-android14-support:ReactCommon/react/renderer/mapbuffer/MapBuffer.h
 
   size_t size() const;
 

@@ -7,10 +7,6 @@
 
 package com.facebook.react.tasks
 
-<<<<<<< HEAD:packages/gradle-plugin/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/tasks/GenerateCodegenSchemaTask.kt
-import com.facebook.react.utils.Os.cliPath
-=======
->>>>>>> v0.68.2-android14-support:packages/react-native-gradle-plugin/src/main/kotlin/com/facebook/react/tasks/GenerateCodegenSchemaTask.kt
 import com.facebook.react.utils.windowsAwareCommandLine
 import org.gradle.api.file.DirectoryProperty
 import org.gradle.api.file.RegularFile

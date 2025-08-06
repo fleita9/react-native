@@ -6,20 +6,6 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
-<<<<<<< HEAD:packages/react-native-codegen/src/parsers/parsers-utils.js
- * @format
- * @flow strict
- */
-
-'use strict';
-
-function nullGuard<T>(fn: () => T): ?T {
-  return fn();
-}
-
-module.exports = {
-  nullGuard,
-=======
  * @flow strict
  */
 
@@ -28,5 +14,4 @@ exports.version = {
   minor: 68,
   patch: 2,
   prerelease: null,
->>>>>>> v0.68.2-android14-support:Libraries/Core/ReactNativeVersion.js
 };

@@ -1,6 +1,4 @@
 version: 2.1
-<<<<<<< HEAD
-=======
 
 # -------------------------
 #        ORBS
@@ -857,14 +855,10 @@ parameters:
 #  It's setup this way so we can trigger a release via a POST
 #  See limitations: https://support.circleci.com/hc/en-us/articles/360050351292-How-to-trigger-a-workflow-via-CircleCI-API-v2
 # -------------------------
->>>>>>> v0.68.2-android14-support
 workflows:
   version: 2
   stub:
     jobs:
-<<<<<<< HEAD
-      - circleci-stub
-=======
       - build_npm_package:
           # Build a release package on every untagged commit, but do not publish to npm.
           publish_npm_args: --dry-run
@@ -925,7 +919,6 @@ workflows:
             branches:
               ignore: gh-pages
           run_disabled_tests: false
->>>>>>> v0.68.2-android14-support
 
 jobs:
   circleci-stub:

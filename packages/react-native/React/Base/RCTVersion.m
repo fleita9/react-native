@@ -21,15 +21,9 @@ NSDictionary* RCTGetReactNativeVersion(void)
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^(void){
     __rnVersion = @{
-<<<<<<< HEAD:packages/react-native/React/Base/RCTVersion.m
-                  RCTVersionMajor: @(1000),
-                  RCTVersionMinor: @(0),
-                  RCTVersionPatch: @(0),
-=======
                   RCTVersionMajor: @(0),
                   RCTVersionMinor: @(68),
                   RCTVersionPatch: @(2),
->>>>>>> v0.68.2-android14-support:React/Base/RCTVersion.m
                   RCTVersionPrerelease: [NSNull null],
                   };
   });
